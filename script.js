@@ -87,14 +87,14 @@ const products = [
     id: 13,
     name: "Aloe Vera Face Wash",
     price: 249,
-    category: "beauty&personalCare",
+    category: "personal-care",
     image: "images/facewash.jpg",
   },
   {
     id: 14,
     name: "Herbal Shampoo",
     price: 299,
-    category: "beauty&personalCare",
+    category: "personal-care",
     image: "images/shampoo.jpg",
   },
 ];
@@ -114,7 +114,7 @@ function renderProducts(list) {
     const div = document.createElement("div");
     div.className = "product";
     div.innerHTML = `
-      <img src="${product.image}">
+      <img src="${product.image}" alt="${product.category+" image" }">
       <div class="product-content">
         <h3>${product.name}</h3>
         <p>₹${product.price}</p>
